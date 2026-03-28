@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap');
+@import url('header.css');
+
+:root {
+    /*Paleta clara*/
+    --color-primary-1:#F8F4E3;
+    --color-primary-2:#CDB4DB;
+    --color-primary-3:#9D4EDD;
+    --color-primary-4:#5A189A;
+    --color-primary-5:#D4AF37;
+
+    /*Paleta escura*/
+    --color-secundary-1:#1B1B2F;
+    --color-secundary-2:#3A0CA3;
+    --color-secundary-3:#7B2CBF;
+    --color-secundary-4:#CDB4DB;
+    --color-secundary-5:#D4AF37;
+
+    --color-neutral-0:#fff;
+    --color-neutral-1:#1d1d1d;
+    --color-neutral-2:#1d1d1dad;
+}
+
+* {
+    font-family: 'Comfortaa', 'Times New Roman', Arial;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
