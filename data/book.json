@@ -1,0 +1,34 @@
+[
+    {
+        "id": 1,
+        "titulo": "A Cartomante",
+        "autor": "Machado de Assis",
+        "genero": "Ficção",
+        "capa": "src/img/cartomante.jpg",
+        "arquivo": "pdf/cartomante.pdf"
+    },
+    {
+        "id": 2,
+        "titulo": "A Dama das Camélias",
+        "autor": "Alexandre Dumas",
+        "genero": "Romance",
+        "capa": "src/img/a_dama.jpg",
+        "arquivo": "pdf/a_dama.pdf"
+    },
+    {
+        "id": 3,
+        "titulo": "Helena",
+        "autor": "Machado de Assis",
+        "genero": "Romance",
+        "capa": "src/img/helena.jpg",
+        "arquivo": "pdf/helena.pdf"
+    },
+    {
+        "id": 4,
+        "titulo": "Memórias Póstumas de Brás Cubas",
+        "autor": "Machado de Assis",
+        "genero": "Romance",
+        "capa": "src/img/memorias.jpg",
+        "arquivo": "pdf/memorias.pdf"
+    }
+]
