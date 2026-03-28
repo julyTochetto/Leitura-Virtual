@@ -27,3 +27,49 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+.social-media-buttons {
+    display: flex;
+    gap: 18px;
+}
+
+.social-media-buttons a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+    height: 40px;
+    gap: 1.5rem;
+    margin-top: -0.5rem;
+    background-color: transparent;
+    font-size: 1.25rem;
+    border-radius: 10px;
+    text-decoration: none;
+    color: var(--color-primary-2);
+    transition: color 0,3s ease;
+}
+
+.social-media-buttons a:hover {
+    color: var(--color-primary-3);
+}
+
+
+footer {
+    background-color: var(--color-primary-4);
+    color: var(--color-primary-2);
+    width: 100%;
+    padding: 3rem 1rem 1rem 1rem;
+    margin-top: 50px;
+}
+
+#footer-items {
+    display: flex;
+    justify-content: space-between;
+    padding: 2% 8% 24px 8%;
+    align-items: center;
+}
+
+#copyright {
+    color: var(--color-primary-2);
+    font-weight: 500;
+}
