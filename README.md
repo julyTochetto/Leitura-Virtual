@@ -4,7 +4,6 @@ O projeto foi voltado para a finalização do curso de Front-End. Desenvolvido n
 
 *Equipamentos Utilizados*
 - HTML / CSS / JavaScript;
-- Bibliotecas: FontAwesome, jQuery, Google Fonts, ScrollReveal e Bootstrap. VER
 
 *Funcionalidades Implementadas*
 
