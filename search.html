@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="src/css/style.css">
+
+    <title>Leitura Virtual</title>
+</head>
+<body>
+     <header>
+        <nav id="navbar">
+            <h1>Flor de Lis</h1>
+            <ul id="nav-list">
+                <li class="nav-item active">
+                    <a href="#home">Início</a>
+                </li>
+                <li class="nav-item">
+                    <a href="search.html">Buscar livros</a>
+                </li>
+                <li class="nav-item">
+                    <a href="fav.html">Favoritos</a>
+                </li>
+            </ul>
+            <button id="mobile-btn">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+            <div id="mobile-menu">
+                <ul id="mobile-nav-list">
+                    <li class="nav-item ">
+                        <a href="#home">Início</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="search.html">Buscar livros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="fav.html">Favoritos</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <section>
+        <div class="container">
+            <div class="filter">
+                <h1>Buscar Livros</h1>
+                <input class="searchInput" placeholder="Buscar...">
+                <div class="gender-filter">
+                    <button class="filter-btn active" data-filter="todos">Todos</button>
+                    <button class="filter-btn" data-filter="romance">Romance</button>
+                    <button class="filter-btn" data-filter="fiction">Ficção</button>
+                </div>
+                <div class="writer-filter">
+                    <select id="writer">
+                        <option value="default">Autor</option>
+                        <option value="a">Alexandre Dumas</option>
+                        <option value="m">Machado de Assis</option>
+                    </select>
+                </div>
+            </div>
+            <div class="list"></div>
+        </div>
+    </section>
+    <footer>
+        <div class="footer">
+            <div id="footer-items">
+                <h1 class="title" style="font-size: 24px;"><i class="fa-solid fa-moon"></i></h1>
+                <p>Livros</p>
+                <div id="copyright">
+                    &#169; 2026 Flor de Lis
+                </div>
+                <div class="social-media-buttons">
+                    <a href="">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+                    <a href="">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="src/js/search.js"></script>
+</body>
+</html>

@@ -23,92 +23,14 @@ if (closeShopping) {
 
 let listCards = [];
 
-let products = [
-    {
-        id: 1,
-        name: "Filhote",
-        category: "gato",
-        Image: "cat1.jpeg",
-        price: 20
-    },
-    {
-        id: 2,
-        name: "Adulto",
-        category: "gato",
-        Image: "cat2.jpeg",
-        price: 25
-    },
-    {
-        id: 3,
-        name: "Idoso",
-        category: "gato",
-        Image: "cat3.jpeg",
-        price: 25
-    },
-    {
-        id: 4,
-        name: "Mix de Pacotes",
-        category: "gato",
-        Image: "cat.jpeg",
-        price: 30
-    },
-    {
-        id: 5,
-        name: "Filhote",
-        category: "cao",
-        Image: "dog1.jpeg",
-        price: 20
-    },
-    {
-        id: 6,
-        name: "Adulto",
-        category: "cao",
-        Image: "dog2.jpeg",
-        price: 25
-    },
-    {
-        id: 7,
-        name: "Idoso",
-        category: "cao",
-        Image: "dog3.jpeg",
-        price: 25
-    },
-    {
-        id: 8,
-        name: "Mix de Pacotes",
-        category: "cao",
-        Image: "dog.jpeg",
-        price: 30
-    },
-    {
-        id: 9,
-        name: "Surpresa",
-        category: "cao",
-        Image: "img5.jpeg",
-        price: 24
-    },
-    {
-        id: 10,
-        name: "Cuidados com o Pet",
-        category: "gato",
-        Image: "img1.jpeg",
-        price: 36
-    },
-    {
-        id: 11,
-        name: "Delícias Caninas",
-        category: "cao",
-        Image: "img2.jpeg",
-        price: 40
-    },
-    {
-        id: 12,
-        name: "Felinos Felizes",
-        category: "gato",
-        Image: "img3.jpeg",
-        price: 40
-    }
-];
+let products = [];
+
+fetch("src/json/book.json")
+.then(res => res.json())
+.then(data => {
+    products = data;
+    show(products);
+});
 
 const show = (filteredList) => {
     list.innerHTML = "";
@@ -117,10 +39,10 @@ const show = (filteredList) => {
         let newDiv = document.createElement('div');
         newDiv.classList.add('item');
         newDiv.innerHTML = `
-            <img src="/src/images/${value.Image}">
+            <img src="/src/img/${value.Image}">
             <div class = "title">${value.name}</div>
-            <div class = "price">${value.price.toLocaleString()}</div>
-            <button  class = "btn-default" onclick = "addToCard(${key})">Adicionar ao Carrinho</button>
+            <div class = "writer">${value.writer}</div>
+            <button  class = "btn-default" onclick = "addToCard(${key})">Favoritar</button>
         `;
 
         list.appendChild(newDiv);
@@ -129,23 +51,20 @@ const show = (filteredList) => {
 
 show(products);
 
+const selectWriter = document.getElementById("writer");
+
 const apply = () => {
     const activeBtn = document.querySelector('.filter-btn.active');
-    const pet = activeBtn.dataset.filter;
-    const price = document.getElementById('price').value;
-    const search = searchInput.value.toLocaleString().trim();
+    const gender = activeBtn.dataset.filter;
+    const writer = selectWriter.value;
+    const search = searchInput.value.toLowerCase().trim();
 
     let result = products.filter(product => {
-        const matchSearch = product.name.toLowerCase().includes(search);
-        const matchCategory = (pet === 'todos') || (product.category === pet);
-        return matchSearch && matchCategory;
+        const matchSearch = product.name.toLowerCase().includes(search) || product.writer.toLowerCase().includes(search)
+        const matchCategory = (gender === 'todos') || (product.category === gender);
+        const matchWriter = ( writer === "default") || (product.writer === writer);
+        return matchSearch && matchCategory && matchWriter;
     });
-
-    if(price === 'min') {
-        result.sort((a, b) => a.price - b.price);
-    } else if (price === 'max') {
-        result.sort((a, b) => b.price - a.price);
-    }
 
     show(result);
 };
