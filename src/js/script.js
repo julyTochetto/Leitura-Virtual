@@ -2,7 +2,6 @@ const openShopping = document.querySelector('.shopping');
 const closeShopping = document.querySelector('.close-shopping');
 const list =  document.querySelector('.list');
 const listCard =  document.querySelector('.list-card');
-const total =  document.querySelector('.total');
 const body =  document.querySelector('body');
 const quantity =  document.querySelector('.quantity');
 const searchInput = document.querySelector('.searchInput');
@@ -20,13 +19,6 @@ if (closeShopping) {
         body.classList.remove('active');
     });
 }
-
-if (total) {
-    total.addEventListener('click', () => {
-        body.classList.remove('active');
-    });
-}
-
 let listCards = [];
 
 let products = [];
