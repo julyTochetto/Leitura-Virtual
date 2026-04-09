@@ -49,21 +49,31 @@
         <div class="container">
             <div class="filter">
                 <h1>Buscar Livros</h1>
-                <input class="searchInput" placeholder="Buscar...">
-                <div class="gender-filter">
+                <input type="text" class="searchInput" placeholder="Buscar...">
+                <div class="fav">
+                    <img src="src/img/fav.jpeg" alt="Favoritos">
+                    <span class="quantity">0</span>
+                </div>
+                <div class="filter-container">
                     <button class="filter-btn active" data-filter="todos">Todos</button>
                     <button class="filter-btn" data-filter="romance">Romance</button>
                     <button class="filter-btn" data-filter="fiction">Ficção</button>
-                </div>
-                <div class="writer-filter">
                     <select id="writer">
-                        <option value="default">Autor</option>
+                        <option value="default">Todos os Autores</option>
                         <option value="a">Alexandre Dumas</option>
                         <option value="m">Machado de Assis</option>
                     </select>
                 </div>
             </div>
             <div class="list"></div>
+        </div>
+        <div class="card">
+            <h4>Favoritos</h4>
+            <ul class="list-card"></ul>
+            <div class="check">
+                <div class="total">Fechar Menu</div>
+                <div class="close-shopping">Sair</div>
+            </div>
         </div>
     </section>
     <footer>
