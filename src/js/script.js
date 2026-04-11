@@ -103,7 +103,7 @@ const reloadCard = ()=> {
             newDiv.innerHTML = `
                 <div><img src="${value.capa}"></div>
                 <div class = "cardTitle">${value.titulo}</div>
-                <button class = "cardButton" onclick = "removeFav(${key})">Remover</button>
+                <button class = "cardButton" onclick = "removeFav(${key})"><i class="fa-solid fa-trash"></i></button>
             `;
             listCard.appendChild(newDiv);
         }
@@ -124,3 +124,5 @@ function localCart() {
         reloadCard();
     }
 }
+
+localCart();

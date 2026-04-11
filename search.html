@@ -51,14 +51,16 @@
                 <h1>Buscar Livros</h1>
                 <input type="text" class="searchInput" placeholder="Buscar...">
                 <div class="shopping">
-                    
+                    <div class="icon">
+                        <i class="fa-regular fa-star"></i>
+                    </div>
                     <span class="quantity">0</span>
                 </div>
                 <div class="filter-container">
                     <button class="filter-btn active" data-filter="todos">Todos</button>
                     <button class="filter-btn" data-filter="romance">Romance</button>
-                    <button class="filter-btn" data-filter="fiction">Ficção</button>
-                    <select id="writer">
+                    <button class="filter-btn" data-filter="ficção">Ficção</button>
+                    <select id="writer" class="select">
                         <option value="default">Todos os Autores</option>
                         <option value="Alexandre Dumas">Alexandre Dumas</option>
                         <option value="Machado de Assis">Machado de Assis</option>
@@ -68,10 +70,15 @@
             <div class="list"></div>
         </div>
         <div class="card">
-            <h1>Favoritos</h1>
+            <h1>
+                Favoritos
+                <i class="fa-solid fa-star"></i>
+            </h1>
             <div class="check">
                 <div class="close-shopping">
-                    <button class="btn-default btn-back">X</button>
+                    <button class="btn-default btn-back">
+                        <i class="fa-solid fa-x"></i>
+                    </button>
                 </div>
             </div>
             <ul class="list-card"></ul>
