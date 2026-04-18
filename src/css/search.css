@@ -1,5 +1,5 @@
 body {
-    background-color: var(--color-primary-1);
+    background-color: var(--fundo);
     font-family: 'Comfortaa', 'Times New Roman', Arial;
     overflow-x: hidden;
 }
@@ -15,7 +15,7 @@ li {
 }
 
 .container h1 {
-    color: var(--color-primary-4);
+    color: var(--d3);
 }
 
 .container header {
@@ -30,16 +30,16 @@ li {
 }
 
 .shopping i:hover {
-    color: var(--color-primary-2);
+    color: var(--d2);
 }
 
 .shopping span {
-    background: var(--color-primary-5);
+    background: var(--d2);
     border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
-    color: var(--color-neutral-0);
+    color: var(--d1);
     position: absolute;
     top: 20px;
     right: 100px;
@@ -61,8 +61,8 @@ li {
     position: fixed;
     top: 0;
     right: -100%;
-    background-color: var(--color-primary-4);
-    color: var(--color-neutral-0);
+    background-color: #764a9b;
+    color: var(--texto);
     height: 100vh;
     width: 400px;
     transition: 0.5s;
@@ -81,7 +81,7 @@ body.active .container {
 }
 
 .card h1 {
-    color: var(--color-primary-2);
+    color:var(--d1);
     font-weight: 600;
     letter-spacing: 1rem;
     margin: 0;
@@ -112,14 +112,14 @@ body.active .container {
 }
 
 .card .check-out div:nth-child(2) {
-    background-color: var(--color-primary-3);
+    background-color: var(--d3);
     color: var(--color-neutral-0);
 }
 
 .list .item {
     max-width: 300px;
     text-align: center;
-    background-color: var(--color-neutral-0);
+    background-color: transparent;
     padding: 50px;
     letter-spacing: 1px;
     transition: all 0.25s ease;
@@ -129,7 +129,7 @@ body.active .container {
 }
 
 .list .item:hover {
-    background-color: var(--color-primary-2);
+    background-color: var(--d2);
 }
 
 .list .item img {
@@ -145,14 +145,13 @@ body.active .container {
 }
 
 .list .item:hover .title,
-.list .item:hover .price {
-    color: var(--color-primary-4);
+.list .item:hover .writer {
+    color: var(--color-neutral-0);
 }
 
 .list .item .btn-default {
     margin: 10px auto 0 auto;
-    background-color: var(--color-primary-5);
-    color: var(--color-primary-1);
+    background-color: var(--d1);
     font-size: 1rem;
     font-weight: 600;
     width: 100%;
@@ -164,7 +163,7 @@ body.active .container {
 }
 
  .list .item button:hover {
-    background-color: var(--color-primary-3);
+    background-color: transparent;
     color: var(--color-neutral-0);
 }
 
@@ -216,7 +215,7 @@ body.active .container {
 
 .cardButton {
     padding: 15px 10px;
-    background-color: var(--color-primary-3);
+    background-color: var(--d2);
     border-radius: 20%;
     color: var(--color-neutral-0);
     font-size: 1.2rem;
@@ -228,29 +227,14 @@ body.active .container {
 
 .filter .filter-btn.active {
     background-color: var(--color-neutral-0);
-    color: var(--color-primary-3);
+    color: var(--color-neutral-2);
 }
 
 .list .item .title {
     font-size: 1.1rem;
-    font-weight: 600;
-    color: var(--color-neutral-1);
+    font-weight: bold;
+    color: var(--texto);
     margin: 15px 0 5px 0;
-}
-
-.list .item .price {
-    font-size: 1.3rem;
-    font-weight: 800;
-    color: var(--color-primary-3);
-    margin-bottom: 15px;
-    letter-spacing: -0.5px;
-}
-
-.list .item .price::before {
-    content: "R$ ";
-    font-size: 0.9rem;
-    font-weight: 400;
-    color: #888;
 }
 
 .filter {
@@ -286,7 +270,7 @@ body.active .container {
     gap: 30px;
     margin: 30px 0;
     flex-wrap: wrap;
-    background-color: var(--color-primary-3);
+    background-color: var(--d3);
     color: var(--color-neutral-0);
     padding: 15px 20px;
     font-size: 15px;
@@ -336,12 +320,12 @@ body.active .container {
     cursor: pointer;
     display: flex;
     align-items: center;
-    color: var(--color-primary-5);
+    color: var(--d3);
     font-size: 30px;
 }
 
 .shopping span {
-    background: var(--color-primary-2);
+    background: var(d1);
     border-radius: 50%;
     color: #fff;
     position: absolute;
@@ -374,24 +358,10 @@ body.active .container {
         margin-bottom: 10px;
     }
 
-   .pet-filter, .price-filter {
-        display: flex;
-        flex-direction: row !important;
-        justify-content: center;
-        flex-wrap: nowrap;
-        width: 100%;
-        gap: 5px;
-    }
     .filter button, .filter select {
-        padding: 8px 10px !important;
         font-size: 13px !important;
         margin: 0 !important;
-        flex: 1;
         min-width: 0;
-    }
-
-    .price-filter select {
-        width: 100%;
     }
 
     .card {
@@ -430,7 +400,6 @@ body.active .container {
     }
 
     .list .item img {
-        max-width: 100% !important; 
         height: auto;
         min-height: 250px;
         object-fit: contain;
@@ -439,9 +408,4 @@ body.active .container {
     .list .item .title {
         font-size: 1.4rem !important;
     }
-
-    .list .item .price {
-        font-size: 1.6rem !important;
-    }
-
 }

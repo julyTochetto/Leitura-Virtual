@@ -21,8 +21,8 @@
     --fundo: #1B1B2F;
     --nav: #3A0CA3;
     --texto: #fff;
-    --d1: #7B2CBF;
-    --d2: #CDB4DB;
+    --d1: #CDB4DB;
+    --d2: #7B2CBF;
     --d3: #D4AF37;
 }
 
@@ -36,7 +36,7 @@
 body {
     background-color: var(--fundo);
     color: var(--texto);
-    transition: background 0.3s, color o.3s;
+    transition: background-color .3s, color o.3s;
 }
 
 #navbar {
@@ -48,7 +48,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: var(--color-primary-3);
+    background-color: var(--d2);
     border-radius: 12px;
     padding: 10px 12px;
     font-weight: 600;
@@ -58,7 +58,7 @@ body {
 }
 
 .btn-default:hover {
-    background-color: var(--color-primary-4);
+    background-color: var(--d3);
     color: var(--color-neutral-0);
 }
 
@@ -87,21 +87,26 @@ body.active .btn-back {
     font-size: 1.25rem;
     border-radius: 10px;
     text-decoration: none;
-    color: var(--color-primary-2);
+    color: var(--d2);
     transition: color 0, 3s ease;
 }
 
 .social-media-buttons a:hover {
-    color: var(--color-primary-3);
+    color: var(--d3);
 }
 
 
 footer {
-    background-color: var(--color-primary-4);
-    color: var(--color-primary-2);
+    background-color: var(--nav);
+    color: var(--d1);
     width: 100%;
     padding: 3rem 1rem 1rem 1rem;
     margin-top: 50px;
+}
+
+footer h1 {
+    color: var(--d3);
+    cursor: pointer;
 }
 
 #footer-items {
@@ -112,7 +117,7 @@ footer {
 }
 
 #copyright {
-    color: var(--color-primary-2);
+    color: var(--d1);
     font-weight: 500;
 }
 
@@ -135,6 +140,7 @@ footer {
         display: block;
         border: none;
         background-color: transparent;
+        color: var(--color-neutral-0);
         font-size: 1.5rem;
         cursor: pointer;
     }

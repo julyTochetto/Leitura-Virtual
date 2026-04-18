@@ -3,13 +3,13 @@ header {
     padding: 28px 8%;
     position: sticky;
     top: 0;
-    background-color: var(--color-primary-4);
+    background-color: var(--nav);
     z-index: 3;
 }
 
 h1 {
     font-size: 24px;
-    color: var(--color-primary-5);
+    color: var(--color-neutral-0);
 }
 
 #navbar {
