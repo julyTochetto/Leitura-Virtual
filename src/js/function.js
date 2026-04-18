@@ -2,15 +2,36 @@ const darkBtn = document.querySelector('.fa-moon');
 
 darkBtn.addEventListener('click', () => {
     const temaAtual = document.documentElement.getAttribute('data-theme');
+    let novo;
 
     if (temaAtual === 'dark') {
-        document.documentElement.setAttribute('data-theme', 'light');
+        novo = 'light';
         darkBtn.classList.replace('fa-sun', 'fa-moon');
     } else {
-        document.documentElement.setAttribute('data-theme', 'dark');
+        novo = 'dark';
         darkBtn.classList.replace('fa-moon', 'fa-sun');
     }
+
+    document.documentElement.setAttribute('data-theme', novo)
+    localStorage.setItem('temaAtual', novo);
 });
+
+function save () {
+    const tema = localStorage.getItem('temaAtual');
+
+    if (tema === 'dark') {
+        document.documentElement.setAttribute('data-theme', 'dark');
+        
+        if ( darkBtn.classList.contains('fa-moon')) {
+            darkBtn.classList.replace('fa-moon', 'fa-sun');
+
+        }
+    }
+}
+
+save();
+
+
 
 $(document).ready(function() {
     $('#mobile-btn').on('click', function () {
