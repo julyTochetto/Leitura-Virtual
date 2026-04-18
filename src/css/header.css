@@ -31,9 +31,3 @@ h1 {
     color: var(--color-neutral-0);
     font-weight: 600;
 }
-
-.nav-item.active a {
-    color: var(--color-primary-2);
-    border-bottom: 3px solid var(--color-primary-5);
-}
-
