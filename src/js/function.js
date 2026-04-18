@@ -31,8 +31,6 @@ function save () {
 
 save();
 
-
-
 $(document).ready(function() {
     $('#mobile-btn').on('click', function () {
         $('#mobile-menu').toggleClass('active');
@@ -40,3 +38,29 @@ $(document).ready(function() {
         $(this).find('i').toggleClass('fa-xmark');
     });
 });
+
+
+const livros = [
+    {titulo: "A Cartomante", autor: "Machado de Assis"},
+    {titulo: "A Dama das Camélias", autor: "Alexandre Dumas"},
+    {titulo: "Helena", autor: "Machado de Assis"},
+    {titulo: "Memórias Póstumas de Brás Cubas", autor: "Machado de Assis"}
+];
+
+function recomendacao() {
+    const hoje = new Date().getDate();
+    const indice = hoje % livros.length;
+    const escolhido = livros[indice];
+
+    const container = document.getElementById('continue');
+    if (container) {
+        container.innerHTML = `
+            <div class="livroDia">
+                <h4>Livro do Dia</h4>
+                <p>"${escolhido.titulo}" de <strong>${escolhido.autor}</strong></p>
+            </div>
+        `;
+    }
+}
+
+recomendacao();
