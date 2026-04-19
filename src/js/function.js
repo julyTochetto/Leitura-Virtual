@@ -44,7 +44,11 @@ const livros = [
     {titulo: "A Cartomante", autor: "Machado de Assis"},
     {titulo: "A Dama das Camélias", autor: "Alexandre Dumas"},
     {titulo: "Helena", autor: "Machado de Assis"},
-    {titulo: "Memórias Póstumas de Brás Cubas", autor: "Machado de Assis"}
+    {titulo: "Memórias Póstumas de Brás Cubas", autor: "Machado de Assis"},
+    {titulo: "Iracema", autor: "José de Alencar"},
+    {titulo: "A Viuvinha", autor: "José de Alencar"},
+    {titulo: "o Homem que Sabia Javanês", autor: "Lima Barreto"},
+    {titulo: "Clara dos Anjos", autor: "Lima Barreto"}
 ];
 
 function recomendacao() {
