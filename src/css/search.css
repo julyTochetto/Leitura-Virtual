@@ -188,7 +188,6 @@ body.active .container {
 .list-card li img {
     width: 100%;
     border-radius: 8px;
-    height: 60px;
     object-fit: cover;
 }
 

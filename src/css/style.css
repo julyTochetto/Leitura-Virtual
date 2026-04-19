@@ -140,7 +140,7 @@ footer h1 {
         display: block;
         border: none;
         background-color: transparent;
-        color: var(--color-neutral-0);
+        color: var(--d3);
         font-size: 1.5rem;
         cursor: pointer;
     }

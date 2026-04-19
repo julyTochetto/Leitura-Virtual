@@ -31,3 +31,9 @@ h1 {
     color: var(--color-neutral-0);
     font-weight: 600;
 }
+
+.nav-item .flor {
+    font-size: 50px;
+    color: var(--d3);
+    font-weight: 100;
+}
