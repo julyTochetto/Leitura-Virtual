@@ -30,5 +30,37 @@
         "genero": "Romance",
         "capa": "src/img/memorias.jpg",
         "arquivo": "pdf/memorias.pdf"
+    },
+    {
+        "id": 5,
+        "titulo": "O Homem que Sabia Javanês",
+        "autor": "Lima Barreto",
+        "genero": "Ficção",
+        "capa": "src/img/o_homem.jpg",
+        "arquivo": "pdf/o_homem.pdf"
+    },
+    {
+        "id": 6,
+        "titulo": "A Viuvinha",
+        "autor": "José de Alencar",
+        "genero": "Romance",
+        "capa": "src/img/viuvinha.jpg",
+        "arquivo": "pdf/viuvinha.pdf"
+    },
+    {
+        "id": 7,
+        "titulo": "Iracema",
+        "autor": "José de Alencar",
+        "genero": "Romance",
+        "capa": "src/img/iracema.jpg",
+        "arquivo": "pdf/iracema.pdf"
+    },
+    {
+        "id": 8,
+        "titulo": "Clara dos Anjos",
+        "autor": "Lima Barreto",
+        "genero": "Romance",
+        "capa": "src/img/clara.jpg",
+        "arquivo": "pdf/clara.pdf"
     }
 ]
