@@ -299,7 +299,7 @@ body.active .container {
     justify-content: center;
     gap: 10px;
     background-color: var(--color-neutral-0);
-    color: var(--color-primary-3);
+    color: var(--color-neutral-1);
     font-size: 15px;
     font-weight: 500;
     border-radius: 8px;
