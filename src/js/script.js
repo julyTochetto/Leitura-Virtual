@@ -41,7 +41,7 @@ const show = (filteredList) => {
             <div class = "title">${value.titulo}</div>
             <div class = "writer">${value.autor}</div>
             <div class="buttons">
-                <button  class = "btn-default" onclick = "window.open('${value.arquivo}','_blank')">Ler</button>
+                <button  class = "btn-default" onclick = "abrir('${value.pdf}')">Ler</button>
                 <button  class = "btn-default" onclick = "addToCard(${key})">Favoritar</button>
             </div>
         `;
