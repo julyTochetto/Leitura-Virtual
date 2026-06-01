@@ -15,7 +15,7 @@ O projeto foi voltado para a finalização do curso de Front-End. Desenvolvido n
 *Como Vizualizar*
 
 1. Clone este repositório.
-2. Abra o arquivo `index.html` no seu navegador.
+2. Abra o arquivo `index.html` **IMPORTANTE: utilizando a extensão de Live Server do VSCode**.
 
 *Autor*
 

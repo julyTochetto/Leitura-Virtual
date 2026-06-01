@@ -30,6 +30,15 @@ fetch("json/book.json")
     show(products);
 });
 
+window.abrir = function(caminhoPdf) {
+    if (caminhoPdf && caminhoPdf !== 'undefined') {
+        window.open(caminhoPdf, '_blank');
+    } else {
+        alert("Livro não encontrado :(");
+    }
+};
+
+
 const show = (filteredList) => {
     list.innerHTML = "";
 
@@ -41,7 +50,7 @@ const show = (filteredList) => {
             <div class = "title">${value.titulo}</div>
             <div class = "writer">${value.autor}</div>
             <div class="buttons">
-                <button  class = "btn-default" onclick = "abrir('${value.pdf}')">Ler</button>
+                <button  class = "btn-default" onclick = "window.abrir('${value.arquivo}')">Ler</button>
                 <button  class = "btn-default" onclick = "addToCard(${key})">Favoritar</button>
             </div>
         `;
